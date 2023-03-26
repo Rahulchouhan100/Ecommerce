@@ -2,6 +2,7 @@ import ReactDOM from "react-dom/client";
 import { Provider } from "react-redux";
 import { createBrowserRouter, Outlet, RouterProvider } from "react-router-dom";
 import Cart from "./src/component/cart/Cart";
+import Error from "./src/component/error/Error";
 import Home from "./src/component/Home/Home";
 import Navbar from "./src/component/Navbar/Navbar";
 import Page from "./src/component/Prouductpage/Page";
@@ -20,6 +21,7 @@ const appRouter = createBrowserRouter([
   {
     path: "/",
     element: <App />,
+    errorElement: <Error />,
     children: [
       {
         path: "/",
@@ -30,7 +32,7 @@ const appRouter = createBrowserRouter([
         element: <Cart />,
       },
       {
-        path: "/prductpage",
+        path: "/single",
         element: <Page />,
       },
     ],
