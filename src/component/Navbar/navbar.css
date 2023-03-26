@@ -1,0 +1,15 @@
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem 8%;
+  border: 1px solid red;
+}
+ul li {
+  display: inline-block;
+  padding-left: 2rem;
+  font-size: 2rem;
+}
+a {
+  text-decoration: none;
+}

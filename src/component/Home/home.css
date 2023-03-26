@@ -1,0 +1,64 @@
+.container {
+  /* display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap; */
+  display: flex;
+  justify-content: space-between;
+
+  flex-wrap: wrap;
+  padding: 2rem 5rem;
+  gap: 2rem;
+}
+.card {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 1rem;
+  width: 20rem;
+  height: auto;
+  overflow: hidden;
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+    rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+  cursor: pointer;
+  gap: 1.5rem;
+}
+.card h2 {
+  font-size: 1.3rem;
+}
+.card h3 {
+  font-size: 1.5rem;
+}
+.card > img {
+  height: 8rem;
+}
+.card > button {
+  background-color: rgb(96, 96, 95);
+  color: white;
+  border: none;
+  padding: 1rem;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+/* ----------------  */
+.search-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 2rem;
+}
+.search-container > input {
+  padding: 0.5rem;
+  width: 40%;
+  font-size: 2rem;
+  border: 2px solid gray;
+}
+.search-container > button {
+  background-color: rgba(0, 0, 255, 0.783);
+  color: white;
+  border: none;
+  padding: 1rem;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
