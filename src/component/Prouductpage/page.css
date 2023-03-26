@@ -1,0 +1,38 @@
+.page-container {
+  display: flex;
+  justify-content: space-between;
+  width: 50%;
+  border: 1px solid red;
+  margin: 0 auto;
+  height: auto;
+  margin-top: 10rem;
+  gap: 5rem;
+  padding: 4rem;
+}
+.img {
+  height: 10rem;
+}
+.counter-container {
+  width: 10%;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1.5rem;
+}
+.counter-container .count {
+  font-size: 2rem;
+  margin: 0 1.5rem;
+}
+.counter-container > button {
+  border: 1px solid gray;
+  padding: 0 1rem;
+  font-size: 2rem;
+  cursor: pointer;
+}
+.addtocart {
+  margin-top: 2rem;
+  background-color: green;
+  border: none;
+  padding: 1rem 2rem;
+  color: white;
+  cursor: pointer;
+}

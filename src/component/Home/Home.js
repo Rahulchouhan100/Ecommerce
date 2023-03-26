@@ -1,6 +1,8 @@
 import React, { useEffect, useState } from "react";
 import { useDispatch } from "react-redux";
 import { add } from "../../store/cartSlice";
+import { Link } from "react-router-dom";
+import Shimmer from "../shimmer/Shimmer";
 import "./home.css";
 
 const Home = () => {
@@ -32,7 +34,9 @@ const Home = () => {
   );
   console.log(filteredItems);
 
-  return (
+  return item.length === 0 ? (
+    <Shimmer />
+  ) : (
     <>
       <div className="search-container">
         <input type="text" value={searchTerm} onChange={handleSearchTerm} />
@@ -45,6 +49,9 @@ const Home = () => {
             <h2>{product.title}</h2>
             <h3> &#8377; {product.price}</h3>
             <button onClick={() => handleItem(product)}>Add to Cart</button>
+            <Link to="/single">
+              <button>More details</button>
+            </Link>
           </div>
         ))}
       </div>

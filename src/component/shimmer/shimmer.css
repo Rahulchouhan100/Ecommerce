@@ -1,0 +1,26 @@
+.shimmer-container {
+  margin-top: 4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+.first-shimmer {
+  background-color: rgba(128, 128, 128, 0.701);
+  height: 15rem;
+  width: 20rem;
+  margin-bottom: 1rem;
+}
+.second-shimmer {
+  background-color: rgba(128, 128, 128, 0.701);
+  height: 2rem;
+  width: 20rem;
+  margin-bottom: 1rem;
+}
+
+.third-shimmer {
+  background-color: rgba(128, 128, 128, 0.701);
+  height: 1.5rem;
+  width: 20rem;
+}
