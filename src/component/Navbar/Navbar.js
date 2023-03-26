@@ -7,7 +7,10 @@ const Navbar = () => {
   const cartItems = useSelector((store) => store.cart);
   return (
     <div className="nav">
-      <section>Logo</section>
+      <Link to="/">
+        <section className="logo">RStore</section>
+      </Link>
+
       <section>
         <ul>
           <li>

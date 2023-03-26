@@ -2,15 +2,32 @@
   display: flex;
   justify-content: space-between;
   width: 50%;
-  border: 1px solid red;
+  box-shadow: rgba(67, 71, 85, 0.27) 0px 0px 0.25em,
+    rgba(90, 125, 188, 0.05) 0px 0.25em 1em;
   margin: 0 auto;
   height: auto;
   margin-top: 10rem;
   gap: 5rem;
   padding: 4rem;
 }
+.page-container > section:nth-child(2) > h2 {
+  font-size: 2.7rem;
+  margin-bottom: 1.5rem;
+}
+.page-container > section:nth-child(2) > h3 {
+  color: rgb(152, 152, 152);
+}
+.page-container > section:nth-child(2) > h4 {
+  margin-top: 0.5rem;
+  font-size: 1.4rem;
+}
+.page-container > section:nth-child(2) > p {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-top: 1.2rem;
+}
 .img {
-  height: 10rem;
+  height: 20rem;
 }
 .counter-container {
   width: 10%;

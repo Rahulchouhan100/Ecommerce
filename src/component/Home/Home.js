@@ -19,11 +19,6 @@ const Home = () => {
     setItem(data);
   };
 
-  const dispatch = useDispatch();
-  const handleItem = (product) => {
-    dispatch(add(product));
-  };
-
   // search functionality
   const handleSearchTerm = (event) => {
     setSearchTerm(event.target.value);
@@ -44,15 +39,14 @@ const Home = () => {
       </div>
       <div className="container">
         {filteredItems.map((product) => (
-          <div className="card" key={product?.id}>
-            <img src={product?.image} alt="product-image" className="img" />
-            <h2>{product.title}</h2>
-            <h3> &#8377; {product.price}</h3>
-            <button onClick={() => handleItem(product)}>Add to Cart</button>
-            <Link to="/single">
-              <button>More details</button>
-            </Link>
-          </div>
+          <Link to={`/single/${product.id}`}>
+            <div className="card" key={product?.id}>
+              <img src={product?.image} alt="product-image" className="img" />
+              <h2>{product.title}</h2>
+              <h3> &#8377; {product.price}</h3>
+              <button>More Details</button>
+            </div>
+          </Link>
         ))}
       </div>
     </>

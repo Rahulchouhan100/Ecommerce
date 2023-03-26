@@ -1,8 +1,4 @@
 .container {
-  /* display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-wrap: wrap; */
   display: flex;
   justify-content: space-between;
 
@@ -12,7 +8,7 @@
 }
 .card {
   display: flex;
-  align-items: center;
+  /* align-items: center; */
   flex-direction: column;
   padding: 1rem;
   width: 20rem;
@@ -25,12 +21,15 @@
 }
 .card h2 {
   font-size: 1.3rem;
+  color: #000;
 }
 .card h3 {
+  color: #000;
   font-size: 1.5rem;
 }
 .card > img {
-  height: 8rem;
+  height: 10rem;
+  object-fit: contain;
 }
 .card > button {
   background-color: rgb(96, 96, 95);
